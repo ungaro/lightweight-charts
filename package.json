@@ -82,6 +82,7 @@
     "typescript": "4.0.2"
   },
   "scripts": {
+    "prepare": "npm run build",
     "clean": "rimraf lib/ dist/",
     "bundle-dts": "tsc --noEmit --allowJs dts-config.js && dts-bundle-generator --config dts-config.js",
     "tsc": "ttsc -p tsconfig.prod.json",
